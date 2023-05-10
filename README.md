@@ -40,7 +40,7 @@ Gitlab wiki page extract example 2 :
 
 
 ## Usage Maven
-The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository**
+The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository**  [![Maven Central create-gitlab-wiki-page-for-files-in-directory](https://maven-badges.herokuapp.com/maven-central/io.github.vdaburon/create-gitlab-wiki-page-for-files-in-directory/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.vdaburon/create-gitlab-wiki-page-for-files-in-directory)
 
 ```xml
 <groupId>io.github.vdaburon</groupId>
