@@ -33,20 +33,19 @@ See the LICENSE file Apache 2 [https://www.apache.org/licenses/LICENSE-2.0](http
 ## The wiki page generated
 Gitlab wiki page extract example 1 :
 
-![wiki_page extract](doc/images/wiki_page_extract.png)
+![wiki_page extract 1](doc/images/wiki_page_extract.png)
 
 Gitlab wiki page extract example 2 :
-![wiki_page extract](doc/images/wiki_page_extract2.png)
+![wiki_page extract 2](doc/images/wiki_page_extract2.png)
 
 
 ## Usage Maven
-
 The maven groupId, artifactId and version, this plugin is in the **Maven Central Repository**
 
 ```xml
 <groupId>io.github.vdaburon</groupId>
 <artifactId>create-gitlab-wiki-page-for-files-in-directory</artifactId>
-<version>1.0</version>
+<version>1.1</version>
 ```
 Just include the plugin in your `pom.xml` and execute `mvn verify` <br>
 or with parameters overwriting properties `mvn -DgitlabUrl=https://mygitlab.com -DprojectId=12344 -DaccessToken=SLKJtokenLMJI -DpageTitle="Load test 05_03_2023" verify`<br>
@@ -68,7 +67,7 @@ or individual launch `mvn -DaccessToken=mytokenLMJI exec:java@create_gitlab_wiki
         <dependency>
             <groupId>io.github.vdaburon</groupId>
             <artifactId>create-gitlab-wiki-page-for-files-in-directory</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
         </dependency>
     </dependencies>
 
@@ -116,13 +115,12 @@ java -jar create-gitlab-wiki-page-for-files-in-directory-&lt;version&gt;.jar -gi
 </pre>
 
 ## Link to others projects
-Usally this plugin is use with [jmeter-graph-tool-maven-plugin](https://github.com/vdaburon/jmeter-graph-tool-maven-plugin)
-
+Usally this plugin is use with [jmeter-graph-tool-maven-plugin](https://github.com/vdaburon/jmeter-graph-tool-maven-plugin)<br>
 and this plugin [csv-report-to-html](https://github.com/vdaburon/JMReportCsvToHtml)
-
 1) The **jmeter-graph-tool-maven-plugin** create the report csv files and graphs
 2) The **csv-report-to-html** create the **html table report** from the csv file
 
 ## Versions
+Version 1.1 change default Wiki Page Title and the Date Format to be more compatible with slug link (remove ':')<br>
 Version 1.0 initial version test with Gitlab version 15.10
 

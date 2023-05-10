@@ -157,13 +157,13 @@ public class WikiPageGenerator {
 		try {
 			LOGGER.info("Generating gitlab wiki page ...");
 
-			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH'h'mm'm'ss's'", Locale.getDefault());
 			String sDate = dateFormat.format(new Date());
 
 			sb.append("<h1> Generated date " + sDate + "</h1><br/>");
 			sb.append(LINE_SEP);
 
-			String pageTitleWikiPage = "Page wiki generated " + sDate;
+			String pageTitleWikiPage = sDate + " Page Wiki Generated";
 			if (pageTitle !=  null && pageTitle.length() > 1) {
 				pageTitleWikiPage = pageTitle;
 			}

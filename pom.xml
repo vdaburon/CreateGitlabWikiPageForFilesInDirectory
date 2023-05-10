@@ -6,7 +6,7 @@
 
     <groupId>io.github.vdaburon</groupId>
     <artifactId>create-gitlab-wiki-page-for-files-in-directory</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
     <name>Create Gitlab Wiki Page for files in directory</name>
     <description>A tool that creates a new Gitlab Wiki Page for files in the directory to display graphics and link files</description>
